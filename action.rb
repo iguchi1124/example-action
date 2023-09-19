@@ -1,2 +1,3 @@
 puts "Hello"
-puts ENV['GITHUB_SHA']
+puts "sha: #{ENV['GITHUB_SHA']}"
+puts "message: #{ENV['MESSAGE']}"

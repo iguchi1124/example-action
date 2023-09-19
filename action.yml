@@ -11,3 +11,6 @@ runs:
         bundler-cache: true
     - run: gem install aws-sdk-dynamodb
     - run: ruby action.rb
+      env:
+        MESSAGE: ${{ inputs.message }}
+      shell: bash
