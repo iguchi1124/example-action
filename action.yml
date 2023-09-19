@@ -10,8 +10,8 @@ runs:
         ruby-version: '3.2'
         bundler-cache: true
       env:
-        BUNDLE_GEMFILE: "${GITHUB_ACTION_PATH}/Gemfile"
-    - run: "ruby ${GITHUB_ACTION_PATH}/action.rb"
+        BUNDLE_GEMFILE: ${{ github.action_path }}/Gemfile
+    - run: ruby ${{ github.action_path }}/action.rb
       env:
         MESSAGE: ${{ inputs.message }}
       shell: bash
